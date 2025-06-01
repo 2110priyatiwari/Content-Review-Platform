@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Webpage</title>
+    <link rel="stylesheet" href="movies.css">
+</head>
+<body>
+    <header>
+        <div class="logo">𝑴𝒐𝒗𝒊𝒆</div>
+        <!-- <nav>
+            <ul>
+                <li><a href="#">Horror</a></li>
+                <li><a href="#">Comedy</a></li>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Suspense</a></li>
+            </ul>
+        </nav> -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search Movies">
+            <button>Search</button>
+        </div>
+    </header>
+
+    <section class="movie-banner">
+        
+        <div class="movie-info">
+           <h1>𝑴𝒓. & 𝑴𝒓𝒔. 𝑴𝒂𝒉𝒊</h1>
+            <p>𝑨 𝒎𝒐𝒗𝒊𝒆 𝒂𝒃𝒐𝒖𝒕 𝒄𝒓𝒊𝒄𝒌𝒆𝒕, 𝒅𝒓𝒆𝒂𝒎𝒔, 𝒂𝒏𝒅 𝒓𝒆𝒍𝒂𝒕𝒊𝒐𝒏𝒔𝒉𝒊𝒑𝒔.</p>
+            <button>Watch Now</button>
+        </div>
+    </section>
+
+    <!-- <section class="movie-slider">
+        <div class="arrow left" onclick="moveLeft()">&#10094;</div>
+        <div class="movies">
+            <div class="card">Movie 1</div>
+            <div class="card">Movie 2</div>
+            <div class="card">Movie 3</div>
+            <div class="card">Movie 4</div>
+             <div class="card">Movie 1</div>
+            <div class="card">Movie 2</div>
+            <div class="card">Movie 3</div>
+            <div class="card">Movie 4</div> 
+        </div>
+        <div class="arrow right" onclick="moveRight()">&#10095;</div>
+    </section> -->
+    <section class="movie-slider">
+        <h2>Treading Now</h2>
+
+        <!-- Left Arrow -->
+        <button class="arrow left-arrow" id="left-arrow">←</button>
+
+        <div class="card-container" id="card-container">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300x450" alt="Movie 1">
+                <div class="card-info">
+                    <h3>Movie Title 1</h3>
+                    <div class="rating">
+                        ★★★★☆
+                    </div>
+                    <p class="review">A great movie filled with action and drama!</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300x450" alt="Movie 2">
+                <div class="card-info">
+                    <h3>Movie Title 2</h3>
+                    <div class="rating">
+                        ★★★☆☆
+                    </div>
+                    <p class="review">An engaging thriller with a surprising twist.</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300x450" alt="Movie 3">
+                <div class="card-info">
+                    <h3>Movie Title 3</h3>
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+                    <p class="review">A masterpiece with incredible performances!</p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300x450" alt="Movie 4">
+                <div class="card-info">
+                    <h3>Movie Title 4</h3>
+                    <div class="rating">
+                        ★★★★☆
+                    </div>
+                    <p class="review">A visually stunning movie with great storytelling.</p>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300x450" alt="Movie 5">
+                <div class="card-info">
+                    <h3>Movie Title 5</h3>
+                    <div class="rating">
+                        ★★★★☆
+                    </div>
+                    <p class="review">A captivating story with excellent acting!</p>
+                </div>
+            </div>
+ <!-- Card 5 -->
+ <div class="card">
+    <img src="https://via.placeholder.com/300x450" alt="Movie 5">
+    <div class="card-info">
+        <h3>Movie Title 5</h3>
+        <div class="rating">
+            ★★★★☆
+        </div>
+        <p class="review">A captivating story with excellent acting!</p>
+    </div>
+</div>
+ <!-- Card 5 -->
+ <div class="card">
+    <img src="https://via.placeholder.com/300x450" alt="Movie 5">
+    <div class="card-info">
+        <h3>Movie Title 5</h3>
+        <div class="rating">
+            ★★★★☆
+        </div>
+        <p class="review">A captivating story with excellent acting!</p>
+    </div>
+</div>
+ <!-- Card 5 -->
+ <div class="card">
+    <img src="https://via.placeholder.com/300x450" alt="Movie 5">
+    <div class="card-info">
+        <h3>Movie Title 5</h3>
+        <div class="rating">
+            ★★★★☆
+        </div>
+        <p class="review">A captivating story with excellent acting!</p>
+    </div>
+</div>
+            <!-- Add more cards here -->
+        </div>
+
+        <!-- Right Arrow -->
+        <button class="arrow right-arrow" id="right-arrow">→</button>
+    </section>
+    
+   
+    
+
+    <script src="movies.js"></script>
+</body>
+</html>

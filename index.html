@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Platform </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Video -->
+    <!-- <video autoplay muted loop id="myVideo">
+        <source src="minivideo.mp4" type="video/mp4">
+      </video> -->
+
+    <!-- Header Section -->
+     
+    <div class="herosection">
+        <video autoplay loop playsinline preload="auto" id="background-video">
+        <!-- <video autoplay loop playsinline  id="background-video"> -->
+            <source src="SampleVideo_1280x720_1mb.mp4" type="video/mp4"> -->
+             Your browser does not support the video tag.
+        </video>
+         
+        <!-- <image src="image.png" alt="photo"></image> -->
+       <h1 class="overlay-content">Welcome  </h1>
+       
+      
+      <!-- Category buttons -->
+    <!-- <div class="buttons">
+        <button class="button">Movies</button>
+        <button class="button">OTT</button>
+        <button class="button">Web</button>
+        <button class="button">Kids</button>
+      </div> -->
+      <div class="buttons">
+        <a href="movies.html" class="button">Movies</a>
+        <a href="otts.html" class="button">OTTs</a>
+        <a href="web.html" class="button">Web Series</a>
+        <a href="kids.html" class="button">Kids</a>
+      </div>
+  
+      <!-- Sound button -->
+      <!-- <button id="sound-btn" onclick="toggleSound()">🔊</button> -->
+      <button id="sound-btn" onclick="toggleVideoSound()">🔇</button>
+  
+       <!--<img src="img/image.png" alt="background-image">-->
+        <!-- Sound button to toggle video sound -->
+        <!-- <button id="sound-toggle" class="sound-button">🔇</button> -->
+    </div>
+        <!-- Netflix-like Card Section with Arrows -->
+         <div class="bg">
+            
+        <section class="netflix-section1">
+            <h2>Popular Shows</h2>
+             <br>
+            <!-- Left Arrow -->
+            <button class="arrow left-arrow" id="left-arrow">←</button>
+    
+            <div class="card-container" id="card-container">
+                <!-- Card 1 -->
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x450" alt="Movie 1">
+                    <div class="card-info">
+                        <h3>Movie Title 1</h3>
+                        <div class="rating">
+                            ★★★★☆
+                        </div>
+                        <p class="review">A great movie filled with action and drama!</p>
+                    </div>
+                </div>
+    
+                <!-- Card 2 -->
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x450" alt="Movie 2">
+                    <div class="card-info">
+                        <h3>Movie Title 2</h3>
+                        <div class="rating">
+                            ★★★☆☆
+                        </div>
+                        <p class="review">An engaging thriller with a surprising twist.</p>
+                    </div>
+                </div>
+    
+                <!-- Card 3 -->
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x450" alt="Movie 3">
+                    <div class="card-info">
+                        <h3>Movie Title 3</h3>
+                        <div class="rating">
+                            ★★★★★
+                        </div>
+                        <p class="review">A masterpiece with incredible performances!</p>
+                    </div>
+                </div>
+    
+                <!-- Card 4 -->
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x450" alt="Movie 4">
+                    <div class="card-info">
+                        <h3>Movie Title 4</h3>
+                        <div class="rating">
+                            ★★★★☆
+                        </div>
+                        <p class="review">A visually stunning movie with great storytelling.</p>
+                    </div>
+                </div>
+    
+                <!-- Card 5 -->
+                <div class="card">
+                    <img src="https://via.placeholder.com/300x450" alt="Movie 5">
+                    <div class="card-info">
+                        <h3>Movie Title 5</h3>
+                        <div class="rating">
+                            ★★★★☆
+                        </div>
+                        <p class="review">A captivating story with excellent acting!</p>
+                    </div>
+                </div>
+     <!-- Card 5 -->
+     <div class="card">
+        <img src="https://via.placeholder.com/300x450" alt="Movie 5">
+        <div class="card-info">
+            <h3>Movie Title 5</h3>
+            <div class="rating">
+                ★★★★☆
+            </div>
+            <p class="review">A captivating story with excellent acting!</p>
+        </div>
+    </div>
+     <!-- Card 5 -->
+     <div class="card">
+        <img src="https://via.placeholder.com/300x450" alt="Movie 5">
+        <div class="card-info">
+            <h3>Movie Title 5</h3>
+            <div class="rating">
+                ★★★★☆
+            </div>
+            <p class="review">A captivating story with excellent acting!</p>
+        </div>
+    </div>
+     <!-- Card 5 -->
+     <div class="card">
+        <img src="https://via.placeholder.com/300x450" alt="Movie 5">
+        <div class="card-info">
+            <h3>Movie Title 5</h3>
+            <div class="rating">
+                ★★★★☆
+            </div>
+            <p class="review">A captivating story with excellent acting!</p>
+        </div>
+    </div>
+                <!-- Add more cards here -->
+            </div>
+    
+            <!-- Right Arrow -->
+            <button class="arrow right-arrow" id="right-arrow">→</button>
+        </section>
+
+
+    <!-- /*second card row */ -->
+
+    <section class="netflix-section2">
+        <h2>Popular Shows</h2>
+         <br>
+        <!-- Left Arrow -->
+        <button class="arrow left-arrow" id="left-arrow">←</button>
+
+        <div class="card-container" id="card-container">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300x450" alt="Movie 1">
+                <div class="card-info">
+                    <h3>Movie Title 1</h3>
+                    <div class="rating">
+                        ★★★★☆
+                    </div>
+                    <p class="review">A great movie filled with action and drama!</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300x450" alt="Movie 2">
+                <div class="card-info">
+                    <h3>Movie Title 2</h3>
+                    <div class="rating">
+                        ★★★☆☆
+                    </div>
+                    <p class="review">An engaging thriller with a surprising twist.</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300x450" alt="Movie 3">
+                <div class="card-info">
+                    <h3>Movie Title 3</h3>
+                    <div class="rating">
+                        ★★★★★
+                    </div>
+                    <p class="review">A masterpiece with incredible performances!</p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300x450" alt="Movie 4">
+                <div class="card-info">
+                    <h3>Movie Title 4</h3>
+                    <div class="rating">
+                        ★★★★☆
+                    </div>
+                    <p class="review">A visually stunning movie with great storytelling.</p>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/300x450" alt="Movie 5">
+                <div class="card-info">
+                    <h3>Movie Title 5</h3>
+                    <div class="rating">
+                        ★★★★☆
+                    </div>
+                    <p class="review">A captivating story with excellent acting!</p>
+                </div>
+            </div>
+ <!-- Card 5 -->
+ <div class="card">
+    <img src="https://via.placeholder.com/300x450" alt="Movie 5">
+    <div class="card-info">
+        <h3>Movie Title 5</h3>
+        <div class="rating">
+            ★★★★☆
+        </div>
+        <p class="review">A captivating story with excellent acting!</p>
+    </div>
+</div>
+ <!-- Card 5 -->
+ <div class="card">
+    <img src="https://via.placeholder.com/300x450" alt="Movie 5">
+    <div class="card-info">
+        <h3>Movie Title 5</h3>
+        <div class="rating">
+            ★★★★☆
+        </div>
+        <p class="review">A captivating story with excellent acting!</p>
+    </div>
+</div>
+ <!-- Card 5 -->
+ <div class="card">
+    <img src="https://via.placeholder.com/300x450" alt="Movie 5">
+    <div class="card-info">
+        <h3>Movie Title 5</h3>
+        <div class="rating">
+            ★★★★☆
+        </div>
+        <p class="review">A captivating story with excellent acting!</p>
+    </div>
+</div>
+            <!-- Add more cards here -->
+        </div>
+
+        <!-- Right Arrow -->
+        <button class="arrow right-arrow" id="right-arrow">→</button>
+    </section>
+        </div>
+    
+    <header>
+
+      <div class="container">
+            <div class="logo">Review Junction</div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search..."  >
+                <!-- <div class="searchicon"><i class="fa-solid fa-magnifying-glass"></i></div> -->
+                <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
+            </div>
+
+            <div class="options">
+                <select id="language">
+                    <option value="en">English</option>
+                    <option value="hi">Hindi</option>
+                    <option value="sp">Spanish</option>
+                    <option value="chi">Chineses</option>
+                </select>
+
+                <button id="dark-mode-toggle">🌜</button>
+
+                <!-- <a href="#" class="login-btn">Login</a> -->
+                <button class="login-btn" onclick="openLoginModal()">Login</button>
+
+<!-- Login Modal (hidden by default) -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeLoginModal()">&times;</span>
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" placeholder="Enter your age" required>
+
+      <input type="submit" value="Login">
+    </form>
+  </div>
+</div>
+            </div>
+        </div>
+
+
+    </header>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+              <h3>About Us</h3>
+              <p>
+                Review Junction is your one-stop platform for unbiased reviews and ratings of movies, OTT shows, and web series. Stay connected with us!
+              </p>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            
+            <div class="footer-section links">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-section contact">
+              <h3>Contact Info</h3>
+              <ul>
+                <li><i class="fas fa-map-marker-alt"></i> 123 Review Street, Agra, India</li>
+                <li><i class="fas fa-phone-alt"></i> +91 123 456 7890</li>
+                <li><i class="fas fa-envelope"></i> support@reviewjunction.com</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="footer-bottom">
+            <p>&copy; 2024 Review Junction | All rights reserved</p>
+          </div>
+    </footer>
+
+    <script src="first.js"> </script>
+</body>
+</html>
