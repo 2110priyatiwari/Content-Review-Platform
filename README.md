@@ -48,10 +48,11 @@ content-review-platform/
 
 ## 🧑‍💻 Author
 
-- [Your Name](https://github.com/your-username)
+- [Priya Tiwari](https://github.com/2110priyatiwari)
 
 ---
 
 <!-- ## 📜 License
 
 This project is licensed under the MIT License. -->
+
